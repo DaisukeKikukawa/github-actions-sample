@@ -1,7 +1,8 @@
 name: Hello World
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [ master ]  # mainブランチへのpush時に実行
 
 jobs:
   say_hello:
